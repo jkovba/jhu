@@ -9,7 +9,7 @@ y = 0
 m = 85
 
 for y in range(q):
-	if (m*y*r) % q == 0:
+	if (m*y*r) % q == 0 and not isinstance(float(y*r)/q, int) and not y == 0:
 		print "P(y) = 0 for y = " + str(y) + " when m = " + str(m)
 		
 	y += 1
@@ -19,7 +19,7 @@ m = 86
 y = 0 # reset y
 
 for y in range(q):
-	if (m*y*r) % q == 0:
+	if (m*y*r) % q == 0 and not isinstance(float(y*r)/q, int) and not y == 0:
 		print "P(y) = 0 for y = " + str(y) + " when m = " + str(m)
-		
+
 	y += 1
